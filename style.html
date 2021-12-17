@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+</head>
+<body>
+    <div id="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quasi consequuntur! Id exercitationem sunt fuga nostrum rem eveniet optio consequuntur? Eveniet, quae vero! Ad earum voluptatum dolor ea repellat voluptatibus.
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+
+        // container.style.color = "red";
+        // container.style.background = 'black';
+
+        // container.style['color'] = "red";
+
+        // container.style.cssText = "color: red; background: black;";
+
+        // container.setAttribute("style", "background: black; color: red");
+
+        function css(element, styles) {
+            for ( const property in styles ) {
+                element.style[property]  = styles[property];
+            }
+        }
+
+        css(container, {
+            fontSize: '20px',
+            background: 'green',
+            color: '#fff',
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Blur</title>
+</head>
+<body>
+    
+    <h3 id="status">Status</h3>
+    <input type="text" id="name">
+    <input type="email" name="email" id="email" autofocus>
+    <input type="text" id="phone">
+
+
+    <script>
+        const name = document.querySelector("#name");
+        const email = document.querySelector("#email");
+        const phone = document.querySelector("#phone");
+        const status = document.querySelector("#status")
+
+        name.addEventListener("focus", (e) => {
+            status.textContent = "You focus name input";
+        });
+
+        name.addEventListener("blur", (e) => {
+            status.textContent = "You focus off name input";
+        });
+
+        email.addEventListener("focus", (e) => {
+            status.textContent = "You focus email input";
+        });
+
+        email.addEventListener("blur", (e) => {
+            status.textContent = "You focus off email input";
+        });
+
+        phone.addEventListener("focus", (e) => {
+            status.textContent = "You focus phone input";
+        });
+
+        phone.addEventListener("blur", (e) => {
+            status.textContent = "You focus off phone input";
+        });
+
+
+    </script>
+</body>
+</html>

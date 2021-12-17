@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Move</title>
+    <style>
+            #result {
+                text-align: center;
+                color: #1a7def;
+            }
+
+            #box {
+                margin: 30px auto;
+                width: 600px;
+                background: green;
+                height: 400px;
+            }        
+    </style>
+</head>
+<body>
+
+    <h3 id="result">Result</h3>
+
+    <div id="box"></div>
+    
+    <div id="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, molestiae. Tempora maiores expedita at doloribus minus, doloremque, ipsam possimus voluptates veritatis officia ipsa aut quam earum sit! Delectus, illo incidunt.</p>
+        <p>Accusantium, reprehenderit. Officia, officiis illo quia pariatur distinctio facilis quis delectus sed labore quaerat vero quod asperiores rem natus aliquam nihil tenetur eveniet illum quae a obcaecati! Minima, quibusdam ullam.</p>
+        <p>Non quisquam fuga amet nam, fugit nesciunt odio iste quaerat atque id dolores. Quas sed, nemo quaerat inventore dolorem odit nobis minus aperiam, enim sit molestiae doloremque ipsa mollitia? Hic.</p>
+        <p>Id quidem autem sunt! Omnis, nobis. Minima eligendi eos, amet error veniam esse architecto fugiat nihil facere sit repudiandae, natus nesciunt totam nulla alias aliquid asperiores quasi beatae, officia eaque!</p>
+        <p>Voluptatem at repudiandae eaque veritatis, earum quos et? Doloribus, distinctio delectus porro repudiandae quibusdam mollitia eius ea dicta voluptatem? Maiores obcaecati quis accusantium at fugit commodi nemo ipsum soluta sunt!</p>
+        <p>Eum nisi quam reprehenderit! Quis culpa minus voluptates corporis aut ab nesciunt enim impedit exercitationem eaque dolores eos, placeat, a obcaecati. Unde nisi eveniet magni sunt laboriosam nostrum exercitationem quia.</p>
+        <p>Porro ut assumenda facilis praesentium est, molestiae corrupti totam consectetur animi nemo consequuntur culpa temporibus iure? Culpa quia blanditiis voluptas porro perferendis ex, dicta saepe magnam corrupti. Quaerat, aperiam ratione?</p>
+        <p>Id vero iure magni inventore voluptatum. Architecto qui officia eveniet, voluptatum cumque nam dignissimos nesciunt eaque in velit reiciendis, ullam laudantium unde reprehenderit beatae iste inventore officiis culpa totam suscipit?</p>
+        <p>Similique, consequatur corporis iusto debitis officiis quas labore quod repellat assumenda deleniti sed accusantium amet dicta dolor aliquid! Dolorem numquam, eum temporibus expedita quod dignissimos dolorum. Minima, perferendis nihil? Iure.</p>
+        <p>Voluptatem rem et laborum totam blanditiis nihil inventore. Quibusdam consequuntur, sed perspiciatis nihil beatae dolore earum tenetur deserunt libero possimus laborum, harum placeat quisquam. Reiciendis vel nam ea expedita cumque.</p>
+    </div>
+
+    <script>
+        const result = document.querySelector("#result");
+        const box = document.querySelector("#box");
+
+        document.body.addEventListener("mousemove", (e) => {
+            result.textContent = `
+            client x and y is => ${e.clientX} and ${e.clientY} | 
+            screen x and y is => ${e.screenX} and ${e.screenY}
+            `
+            
+        });
+
+    </script>
+</body>
+</html>

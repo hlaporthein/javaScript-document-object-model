@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+        .alert {
+            background: #1a7;
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .alert.alert-primary {
+            background: #1a7def;
+        }
+
+        .alert.alert-secondary {
+            background: #827f7f;
+        }
+
+        .alert.alert-danger {
+            background: #c62525;
+        }
+
+        .alert.alert-warning {
+            background: #c4bf26;
+        }
+
+        .alert.alert-info {
+            background: #14acbc;
+        }        
+    </style>
+</head>
+<body>
+    <div id="alert-wrapper">
+        <div class="alert alert-primary">Alert Primary</div>
+        <div class="alert alert-secondary">Alert secondary</div>
+        <div class="alert alert-danger">Alert danger</div>
+        <div class="alert alert-warning">Alert warning</div>
+        <div class="alert alert-info">Alert info</div>
+    </div>
+
+    <script>
+        const alertWrapper = document.getElementById("alert-wrapper");
+        // const alerts = document.getElementsByClassName("alert");
+        const alerts = alertWrapper.getElementsByClassName("alert");
+
+        console.log(alertWrapper.getElementsByClassName("alert alert-danger"));
+
+        // console.log(alerts[0]);
+        // console.log(alerts[alerts.length - 1]);
+
+        for ( let i = 0; i < alerts.length; i++ ) {
+            const elementTag = alerts[i];
+            // console.log(elementTag.innerHTML)
+            // elementTag.innerHTML = `${elementTag.innerHTML} update`;
+            elementTag['innerHTML'] = `${elementTag.innerHTML} update`;
+        }
+
+    </script>
+</body>
+</html>

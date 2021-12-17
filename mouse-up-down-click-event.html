@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Click </title>
+</head>
+<body>
+    
+    <button id="btn">Click Me</button>
+
+    <script>
+        // left button = > 0
+        //wheel => 1
+        // right button => 2
+        // backward => 3
+        // forward => 4
+        //click event => down, up, click
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            console.log(`Mouse click ${new Date()}`)
+        })
+
+        btn.addEventListener("mousedown", () => {
+            console.log(`Mouse Down ${new Date()}`);
+        });
+
+        btn.addEventListener("mouseup", () => {
+            console.log(`Mouse Up ${new Date()}`);
+        });
+
+    </script>
+</body>
+</html>

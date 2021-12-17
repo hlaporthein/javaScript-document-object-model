@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    
+    <h3 id="status"></h3>
+
+    <ul id="tasks">
+        <li class="task1">Task 1</li>
+        <li class="task2">Task 2</li>
+        <li class="task3">Task 3</li>
+        <li class="task4">Task 4</li>
+        <li class="task5">Task 5</li>
+    </ul>
+
+    <script>
+        const status = document.querySelector("#status");
+        const tasks = document.querySelector("#tasks");
+        const task1 = document.querySelector(".task1");
+        const task2 = document.querySelector(".task2");
+        const task3 = document.querySelector(".task3");
+        const task4 = document.querySelector(".task4");
+        const task5 = document.querySelector(".task5");
+
+        tasks.addEventListener("click", (e) => {
+            console.log(e);
+            status.textContent = `${e.target.innerText} clicked`;
+        });
+
+        // task1.addEventListener("click", (e) => {
+        //     status.textContent = `Task 1 click`;
+        // });
+
+        // task2.addEventListener("click", (e) => {
+        //     status.textContent = `Task 2 click`;
+        // });
+
+        // task3.addEventListener("click", (e) => {
+        //     status.textContent = `Task 3 click`;
+        // });
+
+        // task4.addEventListener("click", (e) => {
+        //     status.textContent = `Task 4 click`;
+        // });
+
+        // task5.addEventListener("click", (e) => {
+        //     status.textContent = `Task 5 click`;
+        // });
+
+
+    </script>
+</body>
+</html>

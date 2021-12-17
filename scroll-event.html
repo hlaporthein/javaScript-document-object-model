@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolll Event</title>
+    <style>
+        #container {
+            background: #cebcbc;
+            width: 600px;
+            height: 400px;
+            overflow: auto;
+        }
+
+        #inner-box {
+            width: 1000px;
+            height: 1000px;
+        }        
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="inner-box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae, consectetur, architecto soluta quaerat perspiciatis molestiae, magnam molestias reiciendis asperiores eos eum! Quam dolore blanditiis sequi. Quasi ipsum dolores expedita!
+            </p>
+        </div>
+    </div>
+
+    <button id="x-btn"> Horizontal scroll </button>
+    <button id="y-btn"> Vertical scroll </button>
+    
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa accusantium odio nisi minima nam a inventore, omnis obcaecati voluptatum facilis incidunt ut, iusto deserunt aperiam voluptatibus voluptas rem reprehenderit!</p>
+        <p>Vitae odio enim nostrum debitis accusamus reiciendis, pariatur ea eligendi maiores! Velit, blanditiis eos tempore inventore distinctio praesentium sapiente assumenda veniam? Ullam deserunt impedit repudiandae modi maxime. Doloremque, totam ducimus.</p>
+        <p>Fuga numquam consequatur consequuntur? Culpa sapiente suscipit quas iusto dolores soluta laborum libero quos fuga similique cum natus corporis aliquid a ullam eius blanditiis recusandae nesciunt, rem rerum maiores nulla.</p>
+        <p>Atque tenetur officiis minima, iusto tempore numquam. Nulla beatae esse odit consequatur architecto magni est repudiandae rem corrupti possimus sequi, neque libero porro. Illo dolore rem quam. Blanditiis, praesentium perspiciatis.</p>
+        <p>Deserunt ex, obcaecati eius libero, quis temporibus ullam repellendus quidem numquam quas expedita unde, ratione saepe odit nemo. Eligendi minima quae optio exercitationem adipisci ut, amet doloribus quaerat nisi error?</p>
+        <p>Vel voluptatum natus corrupti ad ea quibusdam ab magnam laboriosam tempora odit! Possimus commodi illo consequuntur quo soluta similique, officiis eos tenetur, iste dicta itaque vero repellat vel veniam. Adipisci.</p>
+        <p>Impedit tempora sed alias animi quasi voluptatem aspernatur delectus, accusamus ipsum unde odio tempore, quaerat vero modi veniam iste aliquam labore magnam repudiandae reiciendis! Libero minima facere ullam inventore perspiciatis.</p>
+        <p>Dolorum optio obcaecati quidem officia, dolorem dolore sunt eius rem deleniti at sit ex totam. Ipsa nihil quaerat obcaecati rem pariatur asperiores unde eum, doloribus, quos, et eligendi. Quo, rerum?</p>
+        <p>Nulla deserunt adipisci non eos unde? Inventore, perferendis cupiditate dignissimos tempore, commodi aspernatur dolor facere doloribus fugit maxime voluptatem voluptatum. Harum quam omnis aspernatur quidem, saepe itaque hic vel eos!</p>
+        <p>Esse quod saepe nobis neque dolor placeat iusto ad dolorem officiis? Doloribus fugiat repellendus quaerat, voluptatibus similique quam debitis exercitationem est vel deleniti enim facilis excepturi esse possimus rem iure.</p>
+        <p>Corrupti expedita modi provident. Temporibus, culpa tempora? Temporibus velit odit exercitationem totam iure. Aut aliquid, facere quo qui, dolorum reiciendis alias repudiandae et quibusdam ipsum optio, officia numquam recusandae amet?</p>
+        <p>Saepe nobis illo alias culpa quia. Architecto laudantium vitae reprehenderit doloremque beatae. Consequatur, dicta! Doloribus animi cumque quo quos impedit enim nisi voluptatum! Ex delectus facilis quibusdam ullam pariatur assumenda!</p>
+        <p>Eligendi a excepturi reiciendis est veritatis, consequuntur ullam dicta explicabo aliquam praesentium velit necessitatibus illo. Itaque quam similique, odit, voluptates, cumque libero dignissimos voluptatem delectus incidunt doloribus dolorem fugiat quas.</p>
+        <p>Quaerat deleniti in laborum quos nesciunt quidem? Aspernatur suscipit qui reprehenderit eum vero incidunt, magni asperiores quod praesentium, quo nesciunt? Ratione quae expedita nisi nemo. Magni voluptatibus iusto laudantium quo?</p>
+        <p>Facilis adipisci officiis cumque sequi aliquam ipsa voluptate est dolore sunt quos doloribus ab, possimus, error exercitationem, nemo eveniet quidem delectus. Rerum sapiente reprehenderit similique, nisi ea temporibus ab quos.</p>
+        <p>Quos porro ex similique sapiente nemo expedita libero laborum dolorum debitis dolore rem ipsa ducimus eligendi, magni voluptates, deleniti quae incidunt sint nesciunt consequatur alias commodi. Veniam at eveniet cumque!</p>
+        <p>Molestiae quaerat ea beatae sint, nisi quo eos recusandae tempore perferendis assumenda, illum tenetur aperiam maiores dicta cum hic. Pariatur dolores voluptate mollitia non adipisci quisquam vitae impedit minima quod!</p>
+        <p>Sit odio voluptate quaerat. Fuga porro voluptatum quidem harum. Voluptate architecto praesentium fugit nisi aliquid aspernatur distinctio impedit voluptas, laudantium illo inventore sint commodi deserunt nulla dolore, rerum earum magni?</p>
+        <p>Praesentium magni quos debitis perferendis adipisci amet, illo et recusandae, sed distinctio harum aperiam magnam earum neque nulla accusamus incidunt enim. Quia nesciunt ipsum doloremque consequuntur sequi possimus quos voluptatibus!</p>
+        <p>Dolore quod accusamus eveniet, atque quae reiciendis velit sint error id commodi architecto quibusdam mollitia odit est quidem cupiditate animi in ut illo! Suscipit porro ipsam consequuntur perspiciatis quis accusamus?</p>
+        <p>Optio error, incidunt quibusdam libero deserunt quasi esse enim facilis accusantium ipsum exercitationem debitis consequatur alias iure, totam natus. Temporibus, atque unde nobis neque assumenda a dolorum? Fugit, officiis ut!</p>
+        <p>Velit odit laudantium quo similique vitae explicabo sint eveniet quaerat ex, impedit suscipit corporis, alias repellat perspiciatis quae deleniti asperiores, optio architecto eos. Voluptates enim modi amet totam, dolorem doloribus!</p>
+        <p>Corrupti quae voluptatibus cumque itaque tempore deleniti, enim nostrum saepe, distinctio dolorum unde? Labore aperiam exercitationem, dolores totam, quidem inventore vel optio temporibus, beatae voluptates adipisci fugit minima provident nemo.</p>
+        <p>Quis quam exercitationem quisquam expedita ipsam temporibus reiciendis, laborum perferendis beatae eos similique dolorum facilis ipsa, sed ducimus debitis, explicabo hic fugiat quia natus dolores assumenda! Reiciendis id suscipit ea!</p>
+        <p>Beatae eum atque, minima corrupti excepturi aperiam doloribus porro voluptas asperiores eius, facilis quaerat sunt, dicta ipsa! Nisi, minima suscipit dicta nesciunt consequatur maiores enim ratione ullam labore dignissimos voluptatem.</p>
+        <p>Quos, soluta debitis! Rerum deleniti modi ratione, veritatis ipsam asperiores cupiditate suscipit fugit maiores magnam velit a consequuntur non itaque facilis natus ab. Doloribus eligendi corrupti cum explicabo, reprehenderit commodi.</p>
+        <p>Asperiores iure recusandae, consequatur quo cum ducimus facilis saepe aspernatur molestiae deleniti voluptas adipisci architecto sequi illo distinctio corporis obcaecati magni eos sunt sint doloribus ipsum impedit. Odio, inventore nisi.</p>
+        <p>Veritatis perspiciatis veniam at eius quod vel harum adipisci aliquid tenetur, nostrum atque excepturi modi odit dolorem consequatur quis ex voluptatibus. Illum atque alias ipsa, repellat quibusdam tempore. Nihil, officia?</p>
+        <p>Atque esse facilis quia necessitatibus quo fugit, vel deserunt distinctio animi, deleniti quas amet repellat eum accusantium odit magni sunt. Doloribus commodi ipsam reprehenderit earum laudantium voluptatum eos ratione minima.</p>
+        <p>Blanditiis fugiat porro sapiente praesentium nobis officiis, aliquid voluptas hic ea natus repudiandae nesciunt at perferendis nostrum. Ea cumque quidem alias veritatis esse, similique sequi laboriosam debitis rerum, magnam atque?</p>
+        <p>Exercitationem itaque quam pariatur adipisci minima, rem quo qui iusto voluptates porro quasi quaerat sunt ratione dolor, omnis neque vero ducimus. Esse non quis eum exercitationem, molestiae qui sit nemo.</p>
+        <p>Natus saepe suscipit nostrum ratione voluptatem! Nam architecto est ex reiciendis dolores earum nisi culpa voluptatum sunt suscipit illum commodi adipisci explicabo odit, minima facere pariatur quo reprehenderit cupiditate hic?</p>
+        <p>Eum consectetur molestiae itaque enim aspernatur harum? Fugit inventore laudantium sed, quam porro accusamus eius reiciendis itaque soluta temporibus repellat optio nihil qui, eum, cumque asperiores voluptas atque error autem.</p>
+        <p>Minus velit, aperiam corrupti consequatur culpa, aliquid dolor id sequi molestiae soluta in! Fugit accusamus itaque porro sapiente nam cupiditate sed, cum laudantium blanditiis explicabo. Minus consequuntur facere sint fugiat!</p>
+        <p>Provident asperiores corrupti veritatis? Nostrum beatae impedit nihil nemo, cumque adipisci. Sapiente doloremque, quasi, ratione odit, dolor soluta animi esse rerum quia corrupti harum quidem alias ipsum illum similique cum.</p>
+        <p>Sequi quam possimus inventore id, at esse! Veniam quas quibusdam sunt, itaque recusandae tempore aut beatae iste, optio corrupti ullam, dignissimos temporibus iure saepe expedita quisquam placeat commodi natus. Odit.</p>
+        <p>Sunt facilis voluptate dignissimos temporibus, eveniet exercitationem animi libero esse deleniti ab suscipit, natus, quas quaerat! Alias nesciunt vitae provident odio eius reprehenderit. Cum hic repudiandae voluptate modi vero. Inventore!</p>
+        <p>Perspiciatis modi commodi nesciunt quo, illo, consequatur doloremque, tenetur enim corporis quibusdam itaque odio. Enim praesentium eum quam repellat iste aliquam neque unde doloremque distinctio saepe repellendus perspiciatis, reprehenderit officiis?</p>
+        <p>Consequuntur ratione ut sequi tenetur. Ratione voluptate error laudantium dicta saepe ex dolor officia provident, dolorem, aspernatur unde nostrum adipisci consectetur facilis quod optio soluta repellendus totam necessitatibus, at quae?</p>
+        <p>Saepe dolor eveniet excepturi reprehenderit voluptate unde numquam, facere minus, ad necessitatibus eaque. Totam dicta blanditiis consectetur officiis asperiores optio architecto dolore, cumque incidunt voluptatem magnam tempora reiciendis excepturi aperiam?</p>
+        <p>Doloribus molestiae similique itaque explicabo cupiditate rerum magnam eum repellendus consequuntur et expedita, quibusdam inventore excepturi nihil provident accusantium, aspernatur neque eaque repudiandae. Aspernatur corporis repudiandae unde laborum? Ea, ex.</p>
+        <p>Praesentium dignissimos molestiae delectus! Temporibus delectus maxime cum enim provident recusandae qui necessitatibus voluptatum explicabo, cupiditate praesentium aliquid placeat aliquam porro nisi veniam, iusto quibusdam sapiente! Doloribus earum quas illo.</p>
+        <p>Odio harum quibusdam natus optio quaerat reiciendis iure libero consectetur. Dicta accusantium tempore beatae inventore odio ullam, fugit quidem voluptate autem fugiat culpa in dolor labore natus temporibus ratione hic.</p>
+        <p>Earum ratione sint porro veniam vitae! Incidunt magnam ut voluptatem perferendis! Porro, ducimus vel labore similique veniam, dolor error unde velit saepe sit nisi inventore fugit rerum libero, doloribus rem?</p>
+        <p>Accusantium, animi voluptatibus asperiores sint unde dignissimos voluptatem officia dolor quis ipsam eum nam eos enim rerum et odio excepturi aspernatur dolore. Quam dignissimos, odio ullam iusto voluptate consectetur sed.</p>
+        <p>Consequatur culpa quo, voluptas animi, commodi illum debitis tenetur quisquam mollitia deserunt cupiditate. Eos quisquam blanditiis aspernatur recusandae officia commodi necessitatibus facilis nulla reiciendis distinctio, temporibus neque aperiam accusantium! Dignissimos!</p>
+        <p>Nemo distinctio quae vitae, natus quibusdam corporis ipsum culpa cupiditate! Quod quaerat, doloremque quam placeat dolorem consequatur deleniti est vero, eos temporibus eaque consequuntur mollitia, reprehenderit voluptate facilis. Quisquam, quae.</p>
+        <p>Fugit cupiditate, doloremque quia ducimus amet error nulla, sit tempora rerum voluptatibus asperiores optio perferendis harum repellat, quisquam ut temporibus inventore eveniet? Beatae, laborum! Deserunt quia iure officiis laborum voluptas.</p>
+        <p>Iure, expedita sunt? Culpa explicabo impedit optio sit adipisci eveniet temporibus iusto doloremque cum tempora atque, deleniti maiores enim cumque animi deserunt ex. Nemo harum eius at repellat numquam deleniti?</p>
+        <p>Nostrum soluta fugit ea ipsum minima! Esse dolore aut distinctio accusamus consectetur delectus voluptatum perspiciatis natus, quae sed, tempore temporibus eum dicta quod reiciendis voluptate ipsa beatae veritatis doloribus modi!</p>
+    </div>
+
+    <script>
+        //widnow object => scrollX and scrollY <=> pageXOffset and pageYOffset
+
+        const container = document.getElementById("container");
+        const xBtn = document.getElementById("x-btn");
+        const yBtn = document.getElementById("y-btn");
+
+        // container.addEventListener("scroll", (e) =>{
+        //     console.log(e);
+        // });
+
+
+        xBtn.addEventListener("click", function(e) {
+            let currentScroll = container.scrollLeft;
+            container.scrollLeft = currentScroll + 10;
+        });
+
+        yBtn.addEventListener("click", function(e) {
+            let currentScroll = container.scrollTop;
+            container.scrollTop = currentScroll + 10;
+        });
+
+
+
+
+        // window.addEventListener("scroll", function(event) {
+        //     console.log(event);
+        // });
+
+        // console.log(window);
+
+        // window.document.body.addEventListener("scroll", function(event) {
+        //     console.log(event);
+        // });
+
+    </script>
+</body>
+</html>

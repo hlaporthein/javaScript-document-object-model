@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Child</title>
+</head>
+<body>
+    <ul id="tasks">
+        <li class="task1">Task 1</li>
+        <li class="task2">Task 2</li>
+        <li class="task3">Task 3</li>
+    </ul>
+
+    <script>
+        //replaceChild syntax => parentNode.replaceChild(newChild, oldChild)
+        const tasks = document.querySelector("#tasks");
+        const task1 = tasks.querySelector(".task1");
+        const task2 = tasks.querySelector(".task2");
+        const task3 = tasks.querySelector(".task3");
+
+        const newTask = document.createElement("li");
+        newTask.textContent = "Cool!";
+
+        // tasks.replaceChild(newTask, task3);
+        tasks.replaceChild(task1, task2);
+
+
+
+    </script>
+</body>
+</html>

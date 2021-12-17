@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        const box = document.querySelector(".box");
+
+        // Simple 
+        // box.innerHTML = "Cool!";
+        // box.innerHTML = '<h1 id="head" class="title">Heading</h1>';
+
+
+        //Node Interface Class
+        const heading = document.createElement("h1"); //Object
+        heading.textContent = "Cool!";
+        heading.id = "head";
+        heading.className = "title";
+
+        box.appendChild(heading);
+
+
+    </script>
+</body>
+</html>

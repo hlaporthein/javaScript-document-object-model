@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Child</title>
+</head>
+<body>
+    <ul id="tasks">
+        <li class="task1">Task 1</li>
+        <li class="task2">Task 2</li>
+        <li class="task3">Task 3</li>
+        <li class="task4">Task 4</li>
+    </ul>
+
+    <script>
+        // ParentNode.removeChild(childNode);
+        const tasks = document.getElementById("tasks");
+        const task1 = tasks.querySelector(".task1");
+        const task2 = tasks.querySelector(".task2");
+        const task3 = tasks.querySelector(".task3");
+        const task4 = tasks.querySelector(".task4");
+
+        // const removeTask = tasks.removeChild(task3); //memory
+        // console.log(removeTask);
+
+        removeChildNode(task2);
+
+        function removeChildNode(node) {
+            node.parentElement.removeChild(node);
+        }
+
+
+    </script>
+</body>
+</html>

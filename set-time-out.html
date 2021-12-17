@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Out</title>
+    <style>
+        #full-screen {
+            background: #1a7def;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 30px;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            transition: all 0.4s ease-in;
+        }
+        .hide-full-screen #full-screen {
+            top: -100%;
+        }
+
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }        
+    </style>
+</head>
+<body>
+
+    <div id="full-screen">Loading</div>
+    
+    <div id="container">
+
+        <h1>Website Title</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quisquam ipsa vel eaque voluptates deleniti dolore magni ad blanditiis commodi nobis nulla nam dolores id, quibusdam minima, totam reiciendis obcaecati.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam officiis cumque voluptatem recusandae laborum, nobis sequi illo praesentium rem reprehenderit iure aliquam quis aperiam? Corporis nostrum quo dolores id.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptas velit minima necessitatibus et nobis non earum dolore dolor cum eos placeat quisquam excepturi at saepe itaque distinctio veritatis fugit.
+        </p>
+    </div>
+
+    <script>
+
+        // const stopButton = document.querySelector("#stop");
+
+        // stopButton.addEventListener("click", function(){
+        //     clearTimeout(hiMessage)
+        // });
+
+        setTimeout(() => {
+            document.body.classList.add("hide-full-screen");
+        }, 3000)
+    
+        const hiMessage =  setTimeout(function() {
+            console.log('hi');
+        }, 5000);  // 1
+
+        const helloMessage = setTimeout(function() {
+            console.log('Hello');
+        }, 3000); // id = 2
+
+        // console.log(hiMessage);
+        // console.log(helloMessage)
+
+    </script>
+</body>
+</html>

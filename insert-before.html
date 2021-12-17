@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before</title>
+</head>
+<body>
+
+    <ul id="tasks">
+        <li class="task1">Task 1</li>
+        <li class="task2">Task 2</li>
+        <li class="task3">Task 3</li>
+        <li class="task4">Task 4</li>
+    </ul>
+
+    <script>
+        //insertBefore => parentNode.insertBefore(newNode, referenceNode)
+        //reference = task2
+        //newNode = new element
+        //parentNode = #tasks
+
+        const tasks = document.querySelector("#tasks");
+        const task1 = tasks.querySelector(".task1");
+        const task2 = tasks.querySelector(".task2");
+        const task3 = tasks.querySelector(".task3");
+        const task4 = tasks.querySelector(".task4");
+
+        tasks.insertBefore(task1, task3);
+
+        const newTask = document.createElement("li");
+        newTask.textContent = "New Tasks";
+
+        tasks.insertBefore(newTask, task3);
+
+
+        const heading = document.createElement("h1");
+        heading.textContent = "Your Tasks";
+
+        document.body.insertBefore(heading, tasks);
+
+    </script>
+</body>
+</html>

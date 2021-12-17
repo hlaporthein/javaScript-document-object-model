@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+<body>
+    <ul id="product">
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+        <li>Product 4</li>
+    </ul>
+
+    <ul id="order">
+        <li>Order 1</li>
+        <li>Order 2</li>
+        <li>Order 3</li>
+    </ul>
+
+
+    <script>
+        const product = document.querySelector("#product");
+        const firstProduct = product.firstElementChild;
+        const order =document.querySelector("#order");
+
+        order.appendChild(firstProduct);
+
+
+        // function createProduct(name) {
+        //     const productTag = document.createElement("li");
+        //     productTag.textContent = name;
+
+        //     return productTag;
+        // }
+
+
+        // product.appendChild(createProduct("Product 5"));
+        // product.appendChild(createProduct("Product 6"));
+        // product.appendChild(createProduct("Product 7"));
+        // product.appendChild(createProduct("Product 8"));
+        // product.appendChild(createProduct("Product 9"));
+
+    </script>
+</body>
+</html>

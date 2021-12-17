@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        .green-text {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="text-box">
+        <button id="btn">Cool!</button><br/>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nisi fugit sapiente numquam incidunt et vitae ipsum ratione veniam praesentium. Amet, cupiditate eius. Neque alias consequatur obcaecati sequi ab unde?
+    </p>
+
+    <a href="https://google.com" id="site-link">Go to Google</a>
+
+    <script>
+        const textBox = document.getElementById("text-box");
+        const btn = document.getElementById("btn");
+        const siteLink = document.getElementById("site-link");
+
+        siteLink.addEventListener("click", function(event) {
+            alert("Hi");
+            event.preventDefault();
+        });
+
+        //handler => function / Action
+        // Node.addEventListerner(eventType, hanlder)
+
+        function alertMe() {
+            // your code block
+            alert("Cool!");
+        }
+
+        // btn.addEventListener("click", alertMe);
+        // btn.addEventListener("click", function() {
+        //     alert("Cool!");
+        // });
+
+        // btn.addEventListener("click", () => {
+        //     alert("Cool!");
+        // });
+
+        // btn.addEventListener("click", () => alert("Hi"));
+
+        // btn.addEventListener("click", function(event){
+        //     // console.log(event);
+        //     // console.log(event.target);
+
+        //     // event.target.textContent = "Press Me";
+        //     // console.log(event.target.parentElement);
+
+        //     event.target.parentElement.classList.add("green-text");
+        // });
+
+        //bubbling
+        // btn.addEventListener("click", function(event) {
+        //     console.log('I press button');
+        //     event.stopPropagation();
+        // });
+
+        // textBox.addEventListener("click", function(event) {
+        //     console.log('I press paragraph')
+        // });
+
+    </script>
+</body>
+</html>

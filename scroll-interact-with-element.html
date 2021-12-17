@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interact Scroll</title>
+    <style>
+        #selected {
+            background: #1a7def;
+            color: #fff;
+        }
+
+        ul li {
+            padding: 20px;
+        }   
+        #up-btn {
+            background: #1a7def;
+            color: #fff;
+            border: 0 none;
+            width: 80px;
+            height: 80px;
+            font-size: 18px;
+            border-radius: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+        }             
+    </style>
+</head>
+<body>
+
+    <button id="goto-btn">Go To Element</button>
+    <button id="up-btn">Up</button>
+    
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+        <li>Task 5</li>
+        <li>Task 6</li>
+        <li>Task 7</li>
+        <li>Task 8</li>
+        <li>Task 9</li>
+        <li>Task 10</li>
+        <li>Task 11</li>
+        <li>Task 12</li>
+        <li>Task 13</li>
+        <li>Task 14</li>
+        <li>Task 15</li>
+        <li>Task 16</li>
+        <li>Task 17</li>
+        <li>Task 18</li>
+        <li>Task 19</li>
+        <li>Task 20</li>
+        <li>Task 21</li>
+        <li>Task 22</li>
+        <li>Task 23</li>
+        <li>Task 24</li>
+        <li>Task 25</li>
+        <li>Task 26</li>
+        <li>Task 27</li>
+        <li>Task 28</li>
+        <li>Task 29</li>
+        <li>Task 30</li>
+        <li>Task 31</li>
+        <li>Task 32</li>
+        <li>Task 33</li>
+        <li>Task 34</li>
+        <li>Task 35</li>
+        <li>Task 36</li>
+        <li>Task 37</li>
+        <li>Task 38</li>
+        <li>Task 39</li>
+        <li>Task 40</li>
+        <li>Task 41</li>
+        <li>Task 42</li>
+        <li>Task 43</li>
+        <li>Task 44</li>
+        <li>Task 45</li>
+        <li>Task 46</li>
+        <li>Task 47</li>
+        <li>Task 48</li>
+        <li>Task 49</li>
+        <li>Task 50</li>
+        <li>Task 51</li>
+        <li>Task 52</li>
+        <li>Task 53</li>
+        <li>Task 54</li>
+        <li>Task 55</li>
+        <li>Task 56</li>
+        <li>Task 57</li>
+        <li>Task 58</li>
+        <li>Task 59</li>
+        <li>Task 60</li>
+        <li>Task 61</li>
+        <li>Task 62</li>
+        <li>Task 63</li>
+        <li>Task 64</li>
+        <li>Task 65</li>
+        <li>Task 66</li>
+        <li>Task 67</li>
+        <li>Task 68</li>
+        <li>Task 69</li>
+        <li>Task 70</li>
+        <li>Task 71</li>
+        <li>Task 72</li>
+        <li>Task 73</li>
+        <li>Task 74</li>
+        <li>Task 75</li>
+        <li>Task 76</li>
+        <li>Task 77</li>
+        <li>Task 78</li>
+        <li>Task 79</li>
+        <li>Task 80</li>
+        <li>Task 81</li>
+        <li>Task 82</li>
+        <li>Task 83</li>
+        <li>Task 84</li>
+        <li>Task 85</li>
+        <li>Task 86</li>
+        <li>Task 87</li>
+        <li>Task 88</li>
+        <li>Task 89</li>
+        <li>Task 90</li>
+        <li>Task 91</li>
+        <li>Task 92</li>
+        <li>Task 93</li>
+        <li>Task 94</li>
+        <li>Task 95</li>
+        <li>Task 96</li>
+        <li>Task 97</li>
+        <li>Task 98</li>
+        <li>Task 99</li>
+        <li>Task 100</li>
+        <li>Task 101</li>
+        <li>Task 102</li>
+        <li>Task 103</li>
+        <li>Task 104</li>
+        <li>Task 105</li>
+        <li>Task 106</li>
+        <li>Task 107</li>
+        <li>Task 108</li>
+        <li>Task 109</li>
+        <li>Task 110</li>
+        <li>Task 111</li>
+        <li>Task 112</li>
+        <li>Task 113</li>
+        <li>Task 114</li>
+        <li>Task 115</li>
+        <li>Task 116</li>
+        <li>Task 117</li>
+        <li>Task 118</li>
+        <li>Task 119</li>
+        <li>Task 120</li>
+        <li>Task 121</li>
+        <li>Task 122</li>
+        <li>Task 123</li>
+        <li>Task 124</li>
+        <li>Task 125</li>
+        <li>Task 126</li>
+        <li>Task 127</li>
+        <li>Task 128</li>
+        <li>Task 129</li>
+        <li>Task 130</li>
+        <li>Task 131</li>
+        <li>Task 132</li>
+        <li>Task 133</li>
+        <li>Task 134</li>
+        <li>Task 135</li>
+        <li>Task 136</li>
+        <li>Task 137</li>
+        <li>Task 138</li>
+        <li>Task 139</li>
+        <li>Task 140</li>
+        <li>Task 141</li>
+        <li>Task 142</li>
+        <li>Task 143</li>
+        <li>Task 144</li>
+        <li>Task 145</li>
+        <li>Task 146</li>
+        <li>Task 147</li>
+        <li>Task 148</li>
+        <li>Task 149</li>
+        <li>Task 150</li>
+        <li>Task 151</li>
+        <li>Task 152</li>
+        <li>Task 153</li>
+        <li>Task 154</li>
+        <li>Task 155</li>
+        <li>Task 156</li>
+        <li>Task 157</li>
+        <li>Task 158</li>
+        <li>Task 159</li>
+        <li>Task 160</li>
+        <li>Task 161</li>
+        <li>Task 162</li>
+        <li>Task 163</li>
+        <li>Task 164</li>
+        <li>Task 165</li>
+        <li>Task 166</li>
+        <li>Task 167</li>
+        <li>Task 168</li>
+        <li>Task 169</li>
+        <li>Task 170</li>
+        <li>Task 171</li>
+        <li>Task 172</li>
+        <li>Task 173</li>
+        <li>Task 174</li>
+        <li id="selected">Task 175</li>
+        <li>Task 176</li>
+        <li>Task 177</li>
+        <li>Task 178</li>
+        <li>Task 179</li>
+        <li>Task 180</li>
+        <li>Task 181</li>
+        <li>Task 182</li>
+        <li>Task 183</li>
+        <li>Task 184</li>
+        <li>Task 185</li>
+        <li>Task 186</li>
+        <li>Task 187</li>
+        <li>Task 188</li>
+        <li>Task 189</li>
+        <li>Task 190</li>
+        <li>Task 191</li>
+        <li>Task 192</li>
+        <li>Task 193</li>
+        <li>Task 194</li>
+        <li>Task 195</li>
+        <li>Task 196</li>
+        <li>Task 197</li>
+        <li>Task 198</li>
+        <li>Task 199</li>
+        <li>Task 200</li>
+    </ul>
+
+    <script>
+        const gotoBtn = document.querySelector("#goto-btn");
+        const selectedItem = document.querySelector("#selected");
+        const upBtn = document.querySelector("#up-btn");
+
+        gotoBtn.addEventListener("click", (e) => {
+            selectedItem.scrollIntoView(true);
+        });
+
+        upBtn.addEventListener("click", function(event) {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener("scroll", function(event) {
+            if ( window.scrollY > 2000 ) {
+                upBtn.setAttribute("style", "display:block;")
+            } else {
+                upBtn.setAttribute("style", "display:none;")
+            }
+        });
+
+    </script>
+</body>
+</html>

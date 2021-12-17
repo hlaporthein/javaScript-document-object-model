@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+    <style>
+        #circle {
+            background: #1a7def;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: fixed;
+            top: -100%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -100px;
+            transition: all 0.4s ease-in;
+        }
+
+        .show-circle #circle {
+            top: 50%;
+        }        
+    </style>
+</head>
+<body>
+
+    <button id="stop">Stop</button>
+    <div id="circle"></div>
+
+    <script>
+
+        const buttonStop = document.querySelector("#stop");
+
+        function circleToggle() {
+            document.body.classList.toggle('show-circle');
+        }
+
+        const showHideCircle = setInterval(circleToggle, 500);
+
+        console.log(showHideCircle);
+
+
+
+        buttonStop.addEventListener("click", function(){
+            clearInterval(showHideCircle);
+            console.log(`we have clear circle.`)
+        });
+
+        // const hiAutoMessage =  setInterval(function(){
+        //     console.log(`${new Date()} -> hi`);
+        // }, 2000);
+
+        // const helloMessage =  setInterval(function(){
+        //     console.log(`${new Date()} -> hello`);
+        // }, 1000);
+
+        // console.log(helloMessage);
+
+        // console.log(hiAutoMessage);
+    </script>
+</body>
+</html>

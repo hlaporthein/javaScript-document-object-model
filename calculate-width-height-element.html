@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Width & Height</title>
+    <style>
+        #container {
+            background: #1a7def;
+            color: #fff;
+            padding: 20px;
+            width: 600px;
+            margin: 30px auto;
+            border: 40px solid #222;
+        }        
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eius cumque possimus, quibusdam voluptatum autem voluptates tenetur quo officiis, accusamus nobis laborum incidunt quisquam sit doloremque cupiditate labore facere sint!
+    </div>
+
+    <script>
+
+        //720 174
+        const container = document.getElementById("container");
+        const containerStyle = getComputedStyle(container);
+        
+        //offset => border + padding + height
+        // console.log(container.offsetWidth);
+        // console.log(container.offsetHeight);
+
+        // console.log(container.clientWidth); 
+        // console.log(container.clientHeight); //94
+
+        console.log(containerStyle.marginLeft);
+        console.log(containerStyle.marginRight);
+        console.log(containerStyle.marginTop);
+        console.log(containerStyle.marginBottom);
+
+    </script>
+</body>
+</html>

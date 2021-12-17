@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load</title>
+    <script src="load.js"></script>
+    <script>
+        // window.addEventListener("load", () => {
+        //     console.log(`Page is fully loaded`);
+        // })
+            //DOMContentLoaded
+        // window.addEventListener("load", () => {
+        //    callMe(); 
+        // });
+
+        // console.log(window);
+
+            // window.onload = function() {
+            //     callMe(); 
+            // }
+
+    </script>
+</head>
+<body>
+    <img src="https://effigis.com/wp-content/uploads/2015/02/DigitalGlobe_WorldView2_50cm_8bit_Pansharpened_RGB_DRA_Rome_Italy_2009DEC10_8bits_sub_r_1.jpg" alt="" id="demo">
+    
+    <div id="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum, voluptates, possimus repellendus impedit cupiditate et necessitatibus doloremque non quae quidem quis illo molestias adipisci tempora ut consequatur rem dolore!
+    </div>
+
+    <script>
+
+        const image = document.querySelector("#demo");
+
+        image.addEventListener("load", function(){
+            console.log('Image has loaded');
+        });
+
+        // window.addEventListener("load", () => {
+        //     console.log(`Page is fully loaded`);
+        // })
+    </script>
+</body>
+</html>

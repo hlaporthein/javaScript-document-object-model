@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading 1</h1>
+
+        <input type="text" name="first_name" value="John" /> 
+        <input type="text" name="last_name" value="William" /> 
+
+        <p>
+            First Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt cupiditate aperiam minima voluptatibus provident dolorum harum aspernatur, accusantium maiores, quibusdam nostrum quaerat facere ipsum, praesentium suscipit laboriosam illum obcaecati rem!
+        </p>
+
+        <p>
+            Last Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium delectus, laborum quos, dignissimos alias reprehenderit eaque facere itaque nihil, obcaecati quam nam? Reiciendis corporis, mollitia enim iste laborum magni!
+        </p>
+
+    </div>
+
+    <script>
+        const headTag = document.querySelector("h1");
+        const containerTag = document.querySelector(".container");
+        const firstName = document.querySelector(".container input[name='first_name']");
+
+        console.log(document.querySelector("p")); //object
+        
+    </script>
+</body>
+</html>

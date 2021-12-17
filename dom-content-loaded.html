@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Content Loaded</title>
+    <link rel="stylesheet" href="dom-content-loaded.css" />
+    <script>
+        //DOMContentLoaded => HTML DOM except css, js ,external 
+
+        // document.addEventListener("DOMContentLoaded", function(){
+        //     const btn = document.getElementById("btn");
+        //     console.log(btn);
+        // });
+        
+            document.addEventListener("DOMContentLoaded", () => {
+                console.log(getComputedStyle(document.body).marginTop);
+            });
+
+    </script>
+</head>
+<body>
+    
+    <button id="btn">Click Me</button>
+
+    <script>
+        
+    </script>
+</body>
+</html>

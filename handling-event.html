@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Event</title>
+</head>
+<body>
+    
+    <div id="container" class="text-box row-box" onclick="alertBox()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eos atque, ab animi veniam quae in cumque ullam esse molestias, ipsam minima? Assumenda, quis inventore molestias eum id laudantium. Veritatis.
+    </div>
+
+    <button id="submit">Submit</button>
+
+    <script>
+        const container = document.querySelector("#container");
+        const btn = document.querySelector("#submit");
+
+        function alertBox(){
+            alert("Hi");
+        }
+
+        // container.addEventListener("click", alertBox);
+        // btn.addEventListener("click", alertBox);
+
+        // console.log(container);
+        // container.onclick = function() {
+        //     console.log(this.classList);
+        //     alert("Hi");
+        // }
+        // console.log(container);
+
+
+        // container.addEventListener("click", alertBox);
+        // container.removeEventListener("click", alertBox);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List</title>
+</head>
+<body>
+    
+    <h1 id="heading" class="title website-title heading main-title">Heading</h1>
+
+    <script>
+        //DOMTokenList => classList => add, remove, toggle,replace
+        const heading = document.getElementById("heading");
+
+        // console.log(typeof heading.classList);
+
+        // heading.classList.add('my-title');
+        // heading.classList.add('cool', 'dd');
+
+        // heading.classList.remove("heading");
+        // heading.classList.toggle("cool", conditional);
+        // heading.classList.toggle("heading");
+
+        // if ( heading.classList.contains("task")  ) {
+        //     //your code block
+        // } else {
+        //     // your code block
+        // }
+
+        heading.classList.replace("website-title", "site-title");
+
+
+
+        
+    </script>
+</body>
+</html>

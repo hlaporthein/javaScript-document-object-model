@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Elements</title>
+</head>
+<body>
+    <div id="container">
+        I am cool!
+        <ul>
+            <li class="task task1">Task 1</li>
+            <li class="task">Task 2</li>
+            <li class="task">Task 3</li>
+        </ul>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit inventore, dolores vero quis, deserunt ullam, iure eos error voluptate minus adipisci deleniti ea. Labore ipsam est laboriosam mollitia expedita.
+        </p>
+
+        <h3>Heading 3</h3>
+    </div>
+
+    <div id="box">
+
+    </div>
+
+    <script>
+        const container = document.querySelector("#container");
+        const box = document.getElementById("box");
+
+        box.innerHTML = container.firstElementChild.innerHTML;
+
+
+        // const containerChildren = container.children;
+
+        // console.log(container.childElementCount);
+        // console.log(container.childNodes);
+        // console.log(container.firstChild.data);
+        // console.log(container.firstElementChild); //ul
+        // console.log(container.lastChild);
+        console.log(container.lastElementChild);
+    </script>
+</body>
+</html>
